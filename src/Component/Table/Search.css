@@ -1,0 +1,33 @@
+ .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+   input[type=text] {
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+ 
+  }
+  
+   .search-container button {
+   
+    padding: 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background:linear-gradient(180deg, #D90EE8 15.29%, #1B7DAB 147.92%);
+       color:white;
+       text-transform: uppercase;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+   .search-container button:hover {
+    background: #ccc;
+  }
