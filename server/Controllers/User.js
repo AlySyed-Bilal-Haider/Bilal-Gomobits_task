@@ -11,7 +11,7 @@ export const createuser = async (req, res, next) => {
         message: "Email is already exist !",
       });
     } else {
-      const newuser = new usersModal(req.body);
+      const newuser = await new usersModal(req.body);
       newuser.save();
 
       if (newuser) {
