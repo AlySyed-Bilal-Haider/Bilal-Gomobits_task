@@ -3,7 +3,7 @@ export const createuser = async (req, res, next) => {
   console.log("all details", req.body);
   const { email } = req.body;
   try {
-    const emailcheck = new usersModal({ email });
+    const emailcheck = usersModal.findOne({ email });
     if (emailcheck) {
       res.json({
         status: "error",
